@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulator Antrean Klinik</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Klinik Sehat</h1>
+        <p>Simulator Antrean dan Riwayat Catatan</p>
+      </header>
+
+      <section>
+        <h2>Antrean Loket</h2>
+
+        <div class="nomor-panggil">
+          <p>Nomor Sedang Dipanggil</p>
+          <h2 id="nomor-panggil">---</h2>
+          <p id="pesan-antrean" class="pesan" role="status">
+            Belum ada nomor yang dipanggil.
+          </p>
+        </div>
+
+        <div class="statistik">
+          <div>
+            <p>Jumlah Menunggu</p>
+            <h3 id="jumlah-antrean">0</h3>
+          </div>
+          <div>
+            <p>Total Dipanggil</p>
+            <h3 id="jumlah-dipanggil">0</h3>
+          </div>
+        </div>
+
+        <button id="btn-ambil" type="button">Ambil Nomor</button>
+        <button id="btn-panggil" type="button">Panggil Berikutnya</button>
+        <button id="btn-reset" type="button">Reset Antrean</button>
+
+        <div class="daftar-panel">
+          <div class="panel">
+            <h3>Daftar Menunggu</h3>
+            <ul id="daftar-antrean"></ul>
+          </div>
+
+          <div class="panel">
+            <h3>5 Nomor Terakhir Dipanggil</h3>
+            <ol id="riwayat-panggilan"></ol>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Editor Catatan</h2>
+        <label for="editor-catatan">Isi catatan</label>
+        <textarea
+          id="editor-catatan"
+          placeholder="Tulis catatan di sini..."
+        ></textarea>
+
+        <button id="btn-undo" type="button" disabled>Undo</button>
+        <button id="btn-redo" type="button" disabled>Redo</button>
+
+        <p id="jumlah-riwayat" aria-live="polite">Undo: 0 | Redo: 0</p>
+        <p id="pesan-editor" class="pesan" role="status"></p>
+      </section>
+    </main>
+  </body>
+</html>
