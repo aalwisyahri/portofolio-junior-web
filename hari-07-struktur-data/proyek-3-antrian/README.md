@@ -75,21 +75,17 @@ Pengujian dilakukan untuk memastikan seluruh fitur bekerja sesuai kebutuhan.
 
 ## 7. Tangkapan Layar
 
-Tambahkan tangkapan layar aplikasi yang sudah berjalan untuk menunjukkan hasil implementasi.
+Tangkapan layar aplikasi yang sudah berjalan untuk menunjukkan hasil implementasi.
 
 ### A. Tampilan Antrean Pasien
 
-Simpan tangkapan layar pada:
-
-` screenshots/antrean.png `
+` img/antrean.png `
 
 Tangkapan layar memperlihatkan nomor yang sedang dipanggil, jumlah antrean, daftar pasien yang menunggu, serta lima nomor terakhir yang dipanggil.
 
 ### B. Tampilan Editor Catatan
 
-Simpan tangkapan layar pada:
-
-` screenshots/editor-catatan.png `
+` img/editor-catatan.png `
 
 Tangkapan layar memperlihatkan area editor catatan, tombol Undo/Redo, dan jumlah riwayat perubahan.
 
