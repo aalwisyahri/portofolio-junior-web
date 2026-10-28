@@ -91,9 +91,9 @@ Tangkapan layar memperlihatkan area editor catatan, tombol Undo/Redo, dan jumlah
 
 ## 8. Teknologi yang Digunakan
 
-- HTML5
-- CSS3
-- JavaScript ES Modules
+- HTML
+- CSS
+- JavaScript
 - Struktur data LinkedQueue, LinkedList, Stack, dan Array
 - Browser `localStorage`
 - Visual Studio Code dan Live Server
