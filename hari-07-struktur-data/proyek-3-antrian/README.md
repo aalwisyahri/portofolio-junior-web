@@ -79,13 +79,13 @@ Tangkapan layar aplikasi yang sudah berjalan untuk menunjukkan hasil implementas
 
 ### A. Tampilan Antrean Pasien
 
-` img/antrean.png `
+![Tampilan Antrean Pasien](img/antrean.png)
 
 Tangkapan layar memperlihatkan nomor yang sedang dipanggil, jumlah antrean, daftar pasien yang menunggu, serta lima nomor terakhir yang dipanggil.
 
 ### B. Tampilan Editor Catatan
 
-` img/editor-catatan.png `
+![Tampilan Editor Catatan](img/editor-catatan.png)
 
 Tangkapan layar memperlihatkan area editor catatan, tombol Undo/Redo, dan jumlah riwayat perubahan.
 
