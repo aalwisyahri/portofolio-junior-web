@@ -5,5 +5,12 @@
         "pesan": "ok",
         "id": 1,
         "waktu": "2026-10-28 09:39:33"
+    },
+    {
+        "nama": "Alexander",
+        "email": "alwigeminx@gmail.com",
+        "pesan": "ok",
+        "id": 2,
+        "waktu": "2026-11-04 15:22:51"
     }
 ]
