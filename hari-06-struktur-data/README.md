@@ -129,10 +129,10 @@ Pengujian dijalankan melalui berkas [**`lab5.js`**](file:///c:/xampp/htdocs/port
 
 | Skenario Pengujian Operasi | Waktu Rata-rata (ms) | Kompleksitas Big-O | Analisis & Penjelasan Mengapa Berbeda |
 | :--- | :---: | :---: | :--- |
-| **`Array.includes` x 1000** | **~233,30 ms** | $O(n)$ per pencarian | Array harus menelusuri elemen satu per satu dari awal sampai ujung akhir (*linear search*). |
-| **`Set.has` x 1000** | **~0,12 ms** | $O(1)$ per pencarian | `Set` menggunakan tabel hash internal (*hash table*). Pencarian langsung menuju alamat memori nilai sehingga **$\pm$ 1.900x lebih cepat**. |
-| **`Array.shift` hingga kosong** | **~3.392,00 ms** (3,39 detik) | $O(n)$ per operasi ($O(n^2)$ total) | Setiap kali elemen terdepan dihapus, indeks dari seluruh elemen di belakangnya wajib digeser satu langkah ke kiri. |
-| **`Queue.dequeue` hingga kosong** | **~23,34 ms** | $O(1)$ per operasi ($O(n)$ total) | Menggunakan penanda `head`, penghapusan hanya mengubah alamat penunjuk tanpa memindahkan posisi data lain. Hasilnya **$\pm$ 145x lebih cepat**. |
+| **`Array.includes` x 1000** | **202,753 ms** | $O(n)$ per pencarian | Array harus menelusuri elemen satu per satu dari awal sampai ujung akhir (*linear search*). |
+| **`Set.has` x 1000** | **~0,122 ms** | $O(1)$ per pencarian | `Set` menggunakan tabel hash internal (*hash table*). Pencarian langsung menuju alamat memori nilai sehingga **$\pm$ 1.900x lebih cepat**. |
+| **`Array.shift` hingga kosong** | **~3,210 s** | $O(n)$ per operasi ($O(n^2)$ total) | Setiap kali elemen terdepan dihapus, indeks dari seluruh elemen di belakangnya wajib digeser satu langkah ke kiri. |
+| **`Queue.dequeue` hingga kosong** | **~26,441 ms** | $O(1)$ per operasi ($O(n)$ total) | Menggunakan penanda `head`, penghapusan hanya mengubah alamat penunjuk tanpa memindahkan posisi data lain. Hasilnya **$\pm$ 145x lebih cepat**. |
 
 ![Tangkapan Layar Pengukuran Efisiensi Lab 5](img/lab5.png)
 
@@ -206,26 +206,3 @@ node bughunt.js
 ![Tangkapan Layar Pengujian Bug Hunt](img/bughunt.png)
 
 ---
-
-## 📊 6. Rubrik Penilaian Portofolio Hari 6 (100 Poin)
-
-| Aspek Penilaian | Bobot | Indikator Ketercapaian | Status |
-| :--- | :---: | :--- | :---: |
-| **Implementasi Stack dan Queue** | 30% | Operasi `push`, `pop`, `peek`, `enqueue`, `dequeue` benar dan kasus tepi kosong tertangani. | **TERPENUHI** |
-| **Aplikasi Berjalan** | 25% | Mini-aplikasi Undo/Redo dan Antrean Loket berjalan lancar sesuai spesifikasi modul. | **TERPENUHI** |
-| **Analisis Pemilihan Struktur Data** | 25% | Mengisi templat T7 untuk 3 studi kasus dengan identifikasi operasi dominan dan komparasi berbobot. | **TERPENUHI** |
-| **Efisiensi** | 10% | Mengimplementasikan Queue versi $O(1)$ dan menguji benchmark waktu riil Lab 5. | **TERPENUHI** |
-| **Kebersihan Kode dan Git** | 10% | Penamaan konsisten, dokumentasi fungsi jelas, modularitas ES Module, dan dokumentasi README lengkap. | **TERPENUHI** |
-
----
-
-## ✅ Ceklis Kelulusan Portofolio Hari 6
-
-- [x] Class `Stack` dan `Queue` lolos uji unit dan menangani kasus tumpukan/antrean kosong.
-- [x] Fungsi validasi `kurungSeimbang` dan pembalik string berhasil diuji pada `lab3.mjs`.
-- [x] Antarmuka Undo/Redo (`proyek3.html`) dan Antrean Loket (`antrian.html`) berfungsi di browser.
-- [x] Tabel efisiensi waktu riil Lab 5 dan penjelasan Big-O selesai diukur.
-- [x] Dokumen Analisis Pemilihan Struktur Data untuk 3 studi kasus tersusun lengkap.
-- [x] Tabel Bug Hunt 6 butir dan skrip pembuktiannya di `bughunt.js` telah selesai.
-- [x] Placeholder tangkapan layar `.png` telah disiapkan.
-
