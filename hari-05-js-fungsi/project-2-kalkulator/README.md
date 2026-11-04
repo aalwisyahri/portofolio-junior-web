@@ -73,7 +73,7 @@ project-2-kalkulator/
   ![Tangkapan Layar Form Validator](../img/validator-tidak-valid.png)
 
 * **Tampilan Form Sukses:**  
-  ![Tangkapan Layar Form Validator Sukses](../img/validator-sukses.png)
+  ![Tangkapan Layar Form Validator Sukses](../img/validator-sukses.png) <br>
   ![Tangkapan Layar Form Validator Sukses](../img/validator-sukses2.png)
 
 ---

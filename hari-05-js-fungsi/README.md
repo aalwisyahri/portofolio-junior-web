@@ -115,7 +115,7 @@ Proyek 2 terdiri dari dua aplikasi web modular yang menerapkan pemisahan logika 
   ![Tangkapan Layar Aplikasi Kalkulator](img/kalkulator.png)
 
 * **Tampilan Kasus Tepi (Pembagian dengan Nol):**
-  ![Tangkapan Layar Kasus Tepi Kalkulator](img/tangkapan-layar-kalkulator-kasus-tepi.png)
+  ![Tangkapan Layar Kasus Tepi Kalkulator](img/kalkulator-kasus-tepi.png)
 
 ---
 
@@ -144,7 +144,7 @@ Proyek 2 terdiri dari dua aplikasi web modular yang menerapkan pemisahan logika 
   ![Tangkapan Layar Form Validator Error](img/validator-tidak-valid.png)
 
 * **Tampilan Form Sukses (Tombol Aktif & Muncul Ringkasan Data):**
-  ![Tangkapan Layar Form Validator Sukses](img/validator-sukses.png)
+  ![Tangkapan Layar Form Validator Sukses](img/validator-sukses.png) <br>
   ![Tangkapan Layar Form Validator Sukses](img/validator-sukses2.png)
 
 ---
@@ -229,26 +229,3 @@ Pengujian kasus tepi dilakukan untuk menjamin kestabilan dan keandalan sistem te
    - *Hasil*: **LOLOS** (menggunakan `textContent` sehingga tag HTML diperlakukan sebagai teks biasa).
 
 ---
-
-## 📊 6. Rubrik Penilaian Proyek 2 (100 Poin)
-
-| Aspek Penilaian | Bobot | Indikator Ketercapaian | Status |
-| :--- | :---: | :--- | :---: |
-| **Fungsionalitas** | 30% | Kalkulator dan Form Validator berjalan lancar sesuai seluruh butir spesifikasi. | **TERPENUHI** |
-| **Modularisasi Fungsi & Berkas** | 25% | Logika bisnis dipisah penuh dari manipulasi UI/DOM menggunakan modul ES (`export`/`import`). Fungsi bersifat *single-responsibility*. | **TERPENUHI** |
-| **Penanganan Kasus Tepi** | 20% | Mampu menangani pembagian dengan nol, string kosong, desimal presisi, regex nomor HP/email, dan sanitasi input. | **TERPENUHI** |
-| **Kebersihan Kode (Clean Code)** | 15% | Penamaan *camelCase*, indentasi 2 spasi konsisten, anotasi JSDoc, tanpa duplikasi kode (*DRY*), dan tanpa atribut event inline. | **TERPENUHI** |
-| **Dokumentasi & Git** | 10% | Menyediakan berkas README informatif, dokumentasi kasus tepi, tautan tangkapan layar `.png`, dan riwayat commit teratur. | **TERPENUHI** |
-
----
-
-## ✅ Ceklis Kelulusan Portofolio Hari 5
-
-- [x] Pengolah Nilai versi fungsi (`nilaifungsi.js` / `fungsinilai.js`) lolos pengujian `console.assert`.
-- [x] Fungsi publik dilengkapi dokumentasi JSDoc standar.
-- [x] Kalkulator menangani pembagian dengan nol dan kasus tepi presisi angka.
-- [x] Form Validator memvalidasi *real-time*, menonaktifkan tombol kirim, dan aman dari XSS.
-- [x] Kode terorganisasi modular dalam berkas-berkas terpisah.
-- [x] Tabel Bug Hunt selesai diklasifikasikan dengan 8 butir lengkap.
-- [x] Seluruh tautan tangkapan layar disiapkan dalam format `.png`.
-
