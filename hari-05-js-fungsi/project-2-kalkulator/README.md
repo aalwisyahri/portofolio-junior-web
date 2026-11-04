@@ -42,10 +42,10 @@ project-2-kalkulator/
 
 ### B. Tangkapan Layar
 * **Tampilan Normal:**  
-  ![Tangkapan Layar Kalkulator](tangkapan-layar-kalkulator.png)
+  ![Tangkapan Layar Kalkulator](../img/kalkulator.png)
 
 * **Tampilan Kasus Pembagian Nol:**  
-  ![Tangkapan Layar Kasus Tepi Kalkulator](tangkapan-layar-kalkulator-kasus-tepi.png)
+  ![Tangkapan Layar Kasus Tepi Kalkulator](../img/kalkulator-kasus-tepi.png)
 
 ---
 
@@ -70,10 +70,11 @@ project-2-kalkulator/
 
 ### B. Tangkapan Layar
 * **Tampilan Form Galat / Validasi Gagal:**  
-  ![Tangkapan Layar Form Validator](tangkapan-layar-validator.png)
+  ![Tangkapan Layar Form Validator](../img/validator-tidak-valid.png)
 
 * **Tampilan Form Sukses:**  
-  ![Tangkapan Layar Form Validator Sukses](tangkapan-layar-validator-sukses.png)
+  ![Tangkapan Layar Form Validator Sukses](../img/validator-sukses.png)
+  ![Tangkapan Layar Form Validator Sukses](../img/validator-sukses2.png)
 
 ---
 

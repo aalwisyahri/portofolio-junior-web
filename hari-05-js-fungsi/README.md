@@ -90,7 +90,7 @@ console.assert(nilaiValid('abc') === false, 'abc tidak valid');
 ### C. Tangkapan Layar Pengujian `console.assert`
 Berikut adalah tangkapan layar eksekusi pengujian pada terminal / konsol:
 
-![Tangkapan Layar Pengujian console.assert](tangkapan-layar-nilai-fungsi.png)
+![Tangkapan Layar Pengujian console.assert](img/nilai-fungsi.png)
 
 ---
 
@@ -112,10 +112,10 @@ Proyek 2 terdiri dari dua aplikasi web modular yang menerapkan pemisahan logika 
 #### 2. Tangkapan Layar Aplikasi Kalkulator
 
 * **Tampilan Kalkulator Normal:**
-  ![Tangkapan Layar Aplikasi Kalkulator](tangkapan-layar-kalkulator.png)
+  ![Tangkapan Layar Aplikasi Kalkulator](img/kalkulator.png)
 
 * **Tampilan Kasus Tepi (Pembagian dengan Nol):**
-  ![Tangkapan Layar Kasus Tepi Kalkulator](tangkapan-layar-kalkulator-kasus-tepi.png)
+  ![Tangkapan Layar Kasus Tepi Kalkulator](img/tangkapan-layar-kalkulator-kasus-tepi.png)
 
 ---
 
@@ -141,10 +141,11 @@ Proyek 2 terdiri dari dua aplikasi web modular yang menerapkan pemisahan logika 
 #### 2. Tangkapan Layar Aplikasi Form Validator
 
 * **Tampilan Form Saat Input Belum Valid (Pesan Galat & Tombol Nonaktif):**
-  ![Tangkapan Layar Form Validator Error](tangkapan-layar-validator.png)
+  ![Tangkapan Layar Form Validator Error](img/validator-tidak-valid.png)
 
 * **Tampilan Form Sukses (Tombol Aktif & Muncul Ringkasan Data):**
-  ![Tangkapan Layar Form Validator Sukses](tangkapan-layar-validator-sukses.png)
+  ![Tangkapan Layar Form Validator Sukses](img/validator-sukses.png)
+  ![Tangkapan Layar Form Validator Sukses](img/validator-sukses2.png)
 
 ---
 
