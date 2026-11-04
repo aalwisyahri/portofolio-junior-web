@@ -1,41 +1,135 @@
-Penentu bilangan ganjil/genap dan positif/negatif/nol
-0. start, let nilai, status1, status2
-1. iput nilai
-2. if (nilai % 2) === 0 {status1="genap"}else{status1="ganjil"}
-3. cetak (status1)
-4. if (nilai > 0) {status2="positif"}else if(nilai < 0) {status2="negatif"} else {status2="nol}
-5. cetak (status2)
-6. end
+=============================================================================
+DOKUMEN PSEUDOCODE PROGRAM PERCABANGAN (HARI 4 - JAVASCRIPT DASAR)
+=============================================================================
 
-Tarif parkir: 2 jam pertama Rp3.000, tiap jam berikutnya Rp2.000, maksimum Rp15.000 per hari
-0. start, let durasiJam, sisaJam, sisaHari, totalHari, bayar
-1. input durasiJam
-2. sisaJam = durasiJam % 24
-3. totalHari = (durasiJam - sisaHari) / 24
-4. if (sisaJam <= 2) {bayar = 3000}else{bayar = 3000 + (sisaJam - 2)*2000}
-5. if (bayar >= 15000) {bayar=15000}
-6. bayar = totalHari * 15000 + bayar
-7. cetak (bayar)
-8. end 
+1. Program Penentu Bilangan Ganjil/Genap dan Positif/Negatif/Nol (lab2_latihan1.js)
+-----------------------------------------------------------------------------
+ALGORITMA Penentu_Bilangan
+DEKLARASI:
+    nilai, statusGanjilGenap, statusTanda : Integer / String
 
-Kalkulator sederhana dengan switch (+, -, *, /) dan penanganan pembagian dengan nol.
-0. start, let nilai1, nilai2, hasil, pilih
-1.output("menu pilihan (+, -, *, /)")
-2. input (nilai1, nilai2, pilih)
-3. switch (pilih)
-    case 1: hasil = nilai1+nilai2
-    case 2: hasil = nilai1-nilai2
-    case 3: hasil = nilai1*nilai2
-    case 4: if(nilai2==0) {hasil = "tidak terdefinisi"}else{hasil = nilai1/nilai2}
-4. cetak (hasil)
-5. end
+DESKRIPSI:
+    MULAI
+    BACA nilai
 
-Penentu kategori BMI (berat / (tinggi * tinggi)): kurang (di bawah 18,5), normal
-(18,5-24,9), lebih (25-29,9), obesitas (30 ke atas).
-0. start, berat, tinggi, BMI, status
-1. input (berat, tinggi)
-2. BMI = berat / (tinggi * tinggi)
-3. if (BMI < 18,5) {status = "kurang"}else if(BMI <= 24.9) {status = "normal"}else if(BMI <= 29,9) {status = "lebih"}
-    else{status="obesitas"}
-4. cetak (status)
-5. end
+    // Seleksi 1: Menentukan Ganjil atau Genap
+    JIKA (nilai % 2 === 0) MAKA
+        statusGanjilGenap = "genap"
+    JIKA TIDAK
+        statusGanjilGenap = "ganjil"
+    AKHIR JIKA
+
+    // Seleksi 2: Menentukan Positif, Negatif, atau Nol
+    JIKA (nilai > 0) MAKA
+        statusTanda = "positif"
+    JIKA TIDAK, JIKA (nilai < 0) MAKA
+        statusTanda = "negatif"
+    JIKA TIDAK
+        statusTanda = "nol"
+    AKHIR JIKA
+
+    TAMPILKAN statusGanjilGenap
+    TAMPILKAN statusTanda
+    SELESAI
+
+
+2. Program Perhitungan Tarif Parkir (lab2_latihan2.js)
+-----------------------------------------------------------------------------
+ALGORITMA Hitung_Tarif_Parkir
+DEKLARASI:
+    durasiJam, sisaJam, totalHari, bayarHari, bayarTotal : Integer
+    TARIF_AWAL = 3000          // 2 jam pertama
+    TARIF_PER_JAM = 2000       // tiap jam berikutnya
+    TARIF_MAKS_PER_HARI = 15000 // batas tarif per hari (24 jam)
+
+DESKRIPSI:
+    MULAI
+    BACA durasiJam
+
+    sisaJam = durasiJam % 24
+    totalHari = (durasiJam - sisaJam) / 24
+
+    // Hitung tarif sisa jam
+    JIKA (sisaJam <= 2) MAKA
+        bayarHari = TARIF_AWAL
+    JIKA TIDAK
+        bayarHari = TARIF_AWAL + (sisaJam - 2) * TARIF_PER_JAM
+    AKHIR JIKA
+
+    // Terapkan batas maksimal tarif per hari
+    JIKA (bayarHari > TARIF_MAKS_PER_HARI) MAKA
+        bayarHari = TARIF_MAKS_PER_HARI
+    AKHIR JIKA
+
+    bayarTotal = (totalHari * TARIF_MAKS_PER_HARI) + bayarHari
+    TAMPILKAN bayarTotal
+    SELESAI
+
+
+3. Program Kalkulator Sederhana dengan Switch (lab2_latihan3.js & kalkulator.js)
+-----------------------------------------------------------------------------
+ALGORITMA Kalkulator_Sederhana
+DEKLARASI:
+    angka1, angka2 : Real
+    operator : String
+    hasil : Real / String
+
+DESKRIPSI:
+    MULAI
+    BACA angka1
+    BACA operator (+, -, *, /)
+    BACA angka2
+
+    VALIDASI: JIKA angka1 atau angka2 bukan angka MAKA
+        TAMPILKAN "Input tidak valid"
+        SELESAI
+    AKHIR JIKA
+
+    PILIH (operator)
+        KASUS '+':
+            hasil = angka1 + angka2
+        KASUS '-':
+            hasil = angka1 - angka2
+        KASUS '*':
+            hasil = angka1 * angka2
+        KASUS '/':
+            JIKA (angka2 === 0) MAKA
+                hasil = "tidak terdefinisi (pembagian dengan nol)"
+            JIKA TIDAK
+                hasil = angka1 / angka2
+            AKHIR JIKA
+        DEFAULT:
+            hasil = "Operator tidak valid"
+    AKHIR PILIH
+
+    TAMPILKAN hasil
+    SELESAI
+
+
+4. Program Penentu Kategori BMI (lab2_latihan4.js & lab4.html)
+-----------------------------------------------------------------------------
+ALGORITMA Penentu_Kategori_BMI
+DEKLARASI:
+    berat, tinggi, bmi : Real
+    kategori : String
+
+DESKRIPSI:
+    MULAI
+    BACA berat (kg)
+    BACA tinggi (m)
+
+    bmi = berat / (tinggi * tinggi)
+
+    JIKA (bmi < 18.5) MAKA
+        kategori = "kurang"
+    JIKA TIDAK, JIKA (bmi <= 24.9) MAKA
+        kategori = "normal"
+    JIKA TIDAK, JIKA (bmi <= 29.9) MAKA
+        kategori = "lebih"
+    JIKA TIDAK
+        kategori = "obesitas"
+    AKHIR JIKA
+
+    TAMPILKAN bmi
+    TAMPILKAN kategori
+    SELESAI

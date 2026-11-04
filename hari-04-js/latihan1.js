@@ -1,50 +1,40 @@
-// Deklarasi variabel
-let nama = 'Alwi';
-let umur = 17;
-let tinggi_badan = 1.69;
-let status_aktif = true;
+//deklarasi variabel
+ 
+let nama = "alwi";
+let umur = 20;
+let tinggiBadan = 1.7;
+let statusAktif = true;
+console.log(nama, umur, tinggiBadan, statusAktif);
+console.log(`Halo, ${nama}! Umur ${umur} tahun.`);
+console.log(`Tinggi badan: ${tinggiBadan} m, Status aktif: ${statusAktif}`);
 
-console.log(`Halo ${nama}! umur ${umur} tinggi badan ${tinggi_badan} m status aktif: ${status_aktif}`);
+//cek tipe data
 
-// Cek Tipe Data
-console.log(typeof ('5' + 3));
-console.log(typeof ('5' * 3));
-console.log(typeof (0.1 + 0.2));
-console.log(typeof (Number('abc')));
-console.log(typeof (10 / 3));
-console.log(typeof (10 % 3));
-console.log(typeof (2 ** 10));
+console.log('5' + 3); 
+console.log(0.1 + 0.2);
+console.log(Number('abc'));
+console.log(10 / 3);
+console.log(10 % 3);
+console.log(2 ** 5); 
 
-// Cari luas dan keliling lingkaran
+console.log(typeof('5' + 3)); 
+console.log(typeof(0.1 + 0.2));
+console.log(typeof(Number('abc')));
+console.log(typeof(10 / 3));
+console.log(typeof(10 % 3));
+console.log(typeof(2 ** 10)); 
+
+//Program menghitung luas dan keliling lingkaran
+
 let jari = 10;
 let luasLingkaran = Math.PI * jari ** 2;
-let kelLingkaran = 2 * Math.PI * jari;
-
-console.log(`Luas lingkaran = ${luasLingkaran}`);
-console.log(`Keliling lingkaran = ${kelLingkaran}`);
-
-// Jumlah detik 1 hari
-let detik = 1;
-let menit = detik * 60;
-let jam = menit * 60;
-let hari = jam * 24;
-console.log(`1 hari = ${hari} detik`)
-
-// Konversi suhu
+console.log(`Luas lingkaran dengan jari-jari ${jari} adalah ${luasLingkaran}`);
+let KelilingLingkaran = 2 * Math.PI * jari;
+console.log(`Keliling lingkaran dengan jari-jari ${jari} adalah ${KelilingLingkaran}`);
+//Program konversi suhu dari Celcius ke Fahrenheit
 let suhuC = 100;
 let suhuF = (suhuC * 9/5) + 32;
-console.log(`${suhuC} celcius = ${suhuF} Fahrenheit`)
-
-// Program A: konversi nilai ke huruf
-const nilai = Number(prompt('Nilai (0-100):'));
-let grade;
-if (nilai >= 85) grade = 'A';
-else if (nilai >= 70) grade = 'B';
-else if (nilai >= 55) grade = 'C';
-else grade = 'D';
-console.log(`Grade: ${grade}`);
-
-// Program B: tahun kabisat
-const tahun = Number(prompt('Tahun:'));
-const kabisat = (tahun % 4 === 0 && tahun % 100 !== 0) || tahun % 400 === 0;
-console.log(kabisat ? 'Kabisat' : 'Bukan kabisat');
+console.log(`${suhuC} derajat Celcius = ${suhuF} derajat Fahrenheit`);
+//Program menghitung detik dalam satu hari
+let detikPerHari = 24 * 60 * 60;
+console.log(`Jumlah detik dalam satu hari adalah ${detikPerHari} detik`);
