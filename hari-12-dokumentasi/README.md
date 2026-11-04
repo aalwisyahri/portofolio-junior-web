@@ -6,7 +6,7 @@
 ---
 
 ## Ringkasan
-
+ 
 Hari 12 berfokus pada **dokumentasi kode program** dan **finalisasi Capstone (Proyek 5)**. Dua kegiatan utama dilaksanakan:
 
 1. **Praktik Dokumentasi Kode** — Menulis JSDoc pada `applama.js` (Lab) dan melakukan Doc Hunt untuk menemukan & memperbaiki komentar yang hilang/tidak akurat di seluruh kode sumber Capstone.
