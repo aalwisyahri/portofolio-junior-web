@@ -65,7 +65,7 @@ INSERT INTO pendaftar
 (nama, email, no_hp, alamat, kelas_id)
 VALUES
 ('Andi Duplikat', 'andi@gmail.com',
- '081200000000', 'Sleman', 1);
+'081200000000', 'Sleman', 1);
 
 -- 10. Uji menghapus kelas yang masih memiliki pendaftar
 -- Seharusnya menghasilkan error 1451
