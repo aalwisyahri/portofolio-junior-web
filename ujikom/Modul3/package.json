@@ -1,0 +1,7 @@
+{
+  "name": "hello-world-nodejs",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
+
