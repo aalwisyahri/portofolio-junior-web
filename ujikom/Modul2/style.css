@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 8px 14px;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+/* button */
+.btn-book {
+  background-color: #2e389e;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* huruf besar dan paragraf kapital */
+/* Heading menjadi huruf besar semua (UPPERCASE) */
+h1 {
+  text-transform: uppercase;
+}
+
+/* Paragraf menjadi huruf kapital di setiap awal kata (Capitalize) */
+p {
+  text-transform: capitalize;
+}
+
+/* tampilan kotak */
+.container-kotak {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: #1a42e8;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+        }
