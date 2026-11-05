@@ -1,0 +1,5 @@
+1. **Perbaikan Syntax Perulangan (`loopToTen`)**: Mengganti pemisah koma `,` dengan titik koma `;` pada sintaks perulangan `for (var i = 0; i < 10; i++)`.
+2. **Penyaringan Bilangan Genap (`displayEvenNumbers`)**: Mengoreksi 6 kesalahan: batas akhir loop, penulisan operator pembanding ketat `===`, perbaikan titik koma salah tempat pada `if`, memasukkan nilai `numbers[i]` (bukan indeks `i`), dan memindahkan pernyataan `return` ke luar blok iterasi loop.
+3. **Penanganan String HTML**: Mengatasi konflik tanda kutip ganda bersarang menggunakan kutip tunggal pembungkus luar (`'<p>...<a href="#Book">...</a></p>'`).
+4. **Koreksi Type Coercion**: Melakukan *type casting* `Number("3")` agar operator `+` melakukan operasi penjumlahan aritmetika numerik ($7 + 3 = 10$) dan bukan penggabungan teks string.
+5. **Console String Substitution**: Menerapkan *format specifiers* yang tepat: `%s` untuk teks string, `%d` untuk bilangan bulat integer, dan `%f` untuk angka desimal float.
