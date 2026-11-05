@@ -1,7 +1,13 @@
 {
-  "name": "hello-world-nodejs",
+  "name": "modul3",
+  "version": "1.0.0",
+  "description": "```bash\r npm start\r ```\r *Output:*\r ```text\r > hello-world-nodejs@1.0.0 start\r > node src/index.js",
+  "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
-
